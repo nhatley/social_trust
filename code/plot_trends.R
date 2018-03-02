@@ -9,9 +9,11 @@ educ_trust = gss_trends_cross %>% filter(subgroup == "educ3" & var == "trust")
 
 plot = race_trust %>% 
   filter(cat!="Other race") %>% 
-  ggplot(aes(year, est, group = punch)) +
+  filter(punch=="CAN TRUST") %>% 
+  ggplot(aes(year, est, group = cat)) +
   geom_point(aes(color = cat)) +
-  geom_line(aes(color = cat))
+  geom_line(aes(color = cat)) +
+  theme_hc()
   #facet_wrap(~punch)
 plot
 

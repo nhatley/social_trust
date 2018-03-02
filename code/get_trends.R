@@ -1,32 +1,12 @@
 
 library(pewmethods)
 
-gss_72_16 = haven::read_sav(file = "~/shared/nonresponse_rdd/benchmark_data/GSS/GSS7216_R1.sav", user_na = T)
-#gss_72_16_fctr = haven::as_factor(
-#  haven::read_spss(file = "/shared/nonresponse_rdd/benchmark_data/GSS/GSS7216_R1.sav", user_na = T))
+
+gss_72_16_fctr = haven::as_factor(
+  haven::read_spss(file = "data/cold_storage/GSS7216_R1.sav", user_na = T))
 ##^^takes forever to load
 
-
-##gss variables; trend years 
-# trust; (72-16) Generally speaking, would you say that most people can be trusted or that you can't be too careful in dealing with people?
-# fair; (72-16 (some missing)); 85. Do you think most people would try to take advantage of you if they got a chance, or would they try to be fair?
-# helpful; (72-16); Would you say that most of the time people try to be helpful, or that they are mostly just looking out for themselves?
-###institution trust 
-  #I am going to name some institutions in this country. As far as the people running these institutions are concerned,
-  #would you say you have a great deal of confidence, only some confidence, or hardly any confidence at all in them?
-    #A.  Banks and financial institutions [VAR: CONFINAN]
-    #B. Major companies [VAR: CONBUS]
-    #C. Organized religion [VAR: CONCLERG]
-    #D. Education [VAR: CONEDUC]
-    #E. Executive branch of the federal government [VAR: CONFED]
-    #F. Organized labor [VAR: CONLABOR]
-    #G. Press [VAR: CONPRESS]
-    #H. Medicine [VAR: CONMEDIC]
-    #I. TV [VAR: CONTV]
-    #J. U.S. Supreme Court [VAR: CONJUDGE]
-    #K. Scientific Community [VAR: CONSCI]
-    #L. Congress [VAR: CONLEGIS]
-    #M. Military [VAR: CONARMY] 
+gss_72_16 = read_rds("data/gss_72_16.RDS")
 
 names(gss_72_16) <- str_to_lower(names(gss_72_16))
 
