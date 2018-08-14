@@ -1,5 +1,4 @@
-
-##Trends in Trust 
+##Trends in Trust  
 
 Looking at data from GSS   
 
