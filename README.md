@@ -1,3 +1,4 @@
+   
 ##Trends in Trust  
 
 Looking at data from GSS   
@@ -18,7 +19,7 @@ make interactive plots of the trust battery from GSS of American's trust in soci
 Progress: I have ran all the weighted estimates from 72-16.
 
 ## Left to do
-Settle on a suitable way of displaying the output. Most likely a shiny page, but need to setup a master site with hugo/github that should link to this portion.
+Settle on a suitable way of displaying the output. Most likely a shiny page, but need to setup a master site with hugo/github that should link to this portion.  
 
 ##GSS variables
 GSS variables; trend years   
