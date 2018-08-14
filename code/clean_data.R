@@ -169,4 +169,4 @@ gss_to_estimate = gss_rec %>%
   na_if("NA") %>% 
   mutate_if(is.factor, funs(fct_drop(.)))
 
-
+saveRDS(gss_to_estimate, "data/gss_72_16_clean.RDS")

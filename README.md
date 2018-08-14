@@ -1,3 +1,4 @@
+
 ##Trends in Trust 
 
 Looking at data from GSS   
@@ -26,8 +27,7 @@ GSS variables; trend years
 - fair; (72-16 (some missing)); 85. Do you think most people would try to take advantage of you if they got a chance, or would they try to be fair?  
 - helpful; (72-16); Would you say that most of the time people try to be helpful, or that they are mostly just looking out for themselves?    
 
-*******
-**institution trust**  
+-institution trust  
   I am going to name some institutions in this country. As far as the people running these institutions are concerned, would you say you have a great deal of confidence, only some confidence, or hardly any confidence at all in them?  
     #A.  Banks and financial institutions [VAR: CONFINAN]   
     #B. Major companies [VAR: CONBUS]   
